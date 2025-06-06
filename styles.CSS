@@ -1,0 +1,211 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background: #f0f2f5;
+  color: #333;
+}
+
+
+header {
+  background: #4a90e2;
+  color: white;
+  padding: 2em 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+
+
+header input {
+  padding: 0.75em 1em;
+  border: none;
+  border-radius: 30px;
+  width: 300px;
+  max-width: 90%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+
+.filtros {
+  background: white;
+  padding: 1.5em;
+  margin-top: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+
+.filtros select,
+.filtros input,
+.filtros button {
+  padding: 0.75em 1em;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  transition: all 0.2s ease-in-out;
+}
+.filtros button {
+  background: #4a90e2;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.filtros button:hover {
+  background: #357abd;
+}
+
+main {
+  padding: 2em;
+}
+
+main h2 {
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  padding: 1em;
+  width: 240px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.card img {
+  border-radius: 16px;
+}
+
+.card button {
+  margin-top: auto;
+  padding: 0.75em 1em;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 100%;
+}
+
+
+.card .info {
+  display: block;
+  margin-top: 0.5em;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 0.5em;
+}
+
+.card button {
+  margin-top: 1em;
+  padding: 0.5em 1em;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.card .descricao {
+  font-size: 0.85em;
+  color: #666;
+  margin: 0.5em 0;
+}
+
+
+.card button:hover {
+  background: #357abd;
+}
+
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background: #eaeaea;
+  font-size: 0.9em;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  margin-top: 2em;
+}
+
+/* ===================== */
+/* 🌐 RESPONSIVO CELULAR */
+/* ===================== */
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    padding: 1.5em 1em;
+  }
+
+  header input {
+    width: 100%;
+    max-width: none;
+  }
+
+  .filtros {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1em;
+    gap: 0.75em;
+    margin: 1em;
+  }
+
+  .filtros select,
+  .filtros input,
+  .filtros button {
+    width: 100%;
+    font-size: 1em;
+  }
+
+  main {
+    padding: 1em;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .card .descricao,
+  .card .preco {
+    font-size: 1em;
+  }
+
+  .card button {
+    font-size: 1em;
+  }
+}

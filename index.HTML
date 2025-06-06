@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DecoraFácil - Marketplace de Decoração</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="icon" type="image/png" href="Abstrato_favicon.png" />
+</head>
+
+<body>
+  <header>
+    <h1>DecoraFácil</h1>
+    <input type="text" id="searchInput" placeholder="Buscar tema, decoração..." />
+  </header>
+
+  <section class="filtros">
+    <select id="temaSelect">
+      <option value="">Tema</option>
+      <option value="infantil">Infantil</option>
+      <option value="casamento">Casamento</option>
+      <option value="formatura">Formatura</option>
+    </select>
+    <input type="date" />
+    <input type="number" id="precoInput" placeholder="Máx. Preço (R$)" />
+    <button id="filtrarBtn">Filtrar</button>
+  </section>
+
+  <main class="sugestoes">
+    <h2>Sugestões para você</h2>
+    <div class="card-container" id="cardContainer">
+
+      <!-- Card: Safari -->
+      <div class="card" data-tema="infantil" data-preco="350">
+        <img src="img/decoracao-safari-decoracao-menino.jpg" alt="Decoração Safari" />
+        <h3>Tema: Safari</h3>
+        <div class="info">
+          <span class="descricao">Animais de pelúcia, árvores decorativas, balões em tons de verde e laranja, bolo temático com leão.</span>
+          <span class="preco">R$ 350,00</span>
+          <button>Ver detalhes</button>
+        </div>
+      </div>
+
+      <!-- Card: Casamento -->
+      <div class="card" data-tema="casamento" data-preco="800">
+        <img src="img/CASAMENTO_CLASSICO.jpg" alt="Decoração Casamento Clássico" />
+        <h3>Tema: Casamento Clássico</h3>
+        <div class="info">
+          <span class="descricao">Mesa de doces com bombons, bolo branco com andares, arranjos florais brancos em vasos altos.</span>
+          <span class="preco">R$ 800,00</span>
+          <button>Ver detalhes</button>
+        </div>
+      </div>
+
+      <!-- Card: Neon -->
+      <div class="card" data-tema="formatura" data-preco="500">
+        <img src="img/decoracao-neon.jpg" alt="Decoração Neon" />
+        <h3>Tema: Festa Neon</h3>
+        <div class="info">
+          <span class="descricao">Painel escuro com arte digital, balões neon, mesas de acrílico iluminado e letreiro de LED.</span>
+          <span class="preco">R$ 500,00</span>
+          <button>Ver detalhes</button>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 DecoraFácil</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
